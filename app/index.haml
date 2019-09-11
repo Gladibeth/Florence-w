@@ -1,0 +1,255 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Banqueteria Florence
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    / Favicons
+    %link{:href => "assets/img/favicon.ico", :rel => "shortcut icon"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img#iso{:src => "assets/img/banqueteria-florence-logo.png"}/
+            %button#hamburger.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos.ul-nav__relative
+              %li.nav-item
+                %a.nav-link.active{:href => "#home"} Home
+              %li.nav-item
+                %a.nav-link{:href => "#about"} Eventos empresas
+              %li.nav-item
+                %a.nav-link{:href => "#service"} Eventos personas
+              %li.nav-item
+                %a.nav-link{:href => "#training"} Cocteleria
+              %li.nav-item
+                %a.nav-link{:href => "#client"} Pasteleria
+              %li.nav-item
+                %a.nav-link{:href => "#training"} Blog
+              %li.nav-item
+                %a.nav-link{:href => "#client"} Menus
+              %li.nav-item
+                %a.nav-link
+                  %button.btn-menu.border-0.hamburger.hamburger--elastic.ml-autos{:type => "button"}
+                    %span.hamburger-box
+                      %span.hamburger-inner
+              -# .sidebar
+
+
+    .main-banner
+      .main-banner__content
+        .main-banner__items
+          .main-banner__item
+            .main-banner__text
+              .main-banner__title
+                %p Florence 
+              .main-banner__description
+                %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum iure at ea aliquid ullam vero sit eligendi, consequuntur vel ut quasi! Iste sunt doloribus, quibusdam eveniet commodi minus quis?
+            .main-banner__img
+              %img{ :src => "https://images.unsplash.com/photo-1497728736977-37f59c912162?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+        .main-banner__items
+          .main-banner__item
+            .main-banner__text
+              .main-banner__title
+                %p Florence 
+              .main-banner__description
+                %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum iure at ea aliquid ullam vero sit eligendi, consequuntur vel ut quasi! Iste sunt doloribus, quibusdam eveniet commodi minus quis?
+            .main-banner__img
+              %img{ :src => "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+    %section.main-about
+      .container
+        .main-about__content
+          .main-about__line
+            .main-about__img
+              %img{ :src => "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+          .main-about__box
+            .main-general__title
+              %p Quiénes somos
+            .main-about__description
+              .main-about__text
+                .main-about__subtitle
+                  %p Vision
+                .main-about__subdescrition
+                  %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos nemo, suscipit et reiciendis animi exercitationem expedit.
+              .main-about__text
+                .main-about__subtitle
+                  %p Mision
+                .main-about__subdescrition
+                  %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos nemo, suscipit et reiciendis animi exercitationem expedit.
+        .main-about__team
+          .main-about__item
+            .main-about__titleteam
+              %p Equipo
+            .main-about__descriptionteam
+              %p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          .main-about__block
+            .main-about__boxteam
+              %img{ :src => "assets/img/people/1.jpg"}/
+            .main-about__boxteam
+              %img{ :src => "assets/img/people/4.jpg"}/
+            .main-about__boxteam
+              %img{ :src => "assets/img/people/3.jpg"}/
+            .main-about__boxteam
+              %img{ :src => "assets/img/people/2.jpg"}/
+    %section.main-gallery
+      .container
+        .main-general__title
+          %p Galería
+        .main-gallery__content 
+          .main-gallery__item
+            .main-gallery__img
+              %img{ :src => "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img{ :src => "https://images.unsplash.com/photo-1450150205175-1e2ee46bb78b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img{ :src => "https://images.unsplash.com/photo-1464195244916-405fa0a82545?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img{ :src => "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img{ :src => "https://images.unsplash.com/photo-1451475836122-926a326bda4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img{ :src => "https://images.unsplash.com/photo-1500511599662-5441d83fae18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+
+    %section.main-contact
+      .container
+        .main-contact__content
+          .main-contact-item
+            .main-contact__info
+              .main-general__title
+                %p Contáctanos
+              .main-contact__description
+                %p Ésta es la vía correcta, para hacer llegar y deseas hacer un reclamo, Felicitacitarnos o realizar consultas generales.
+              .main-contact__data
+                %ul.main-contact__ul      
+                  %li
+                    %a.main-contact__link{ href: '#' }
+                      %i.fa.fa-envelope
+                      %p ventas@banqueteriaflorence.cl
+                  %li
+                    %a.main-contact__link{ href: '#' }
+                      %i.fa.fa-location-arrow
+                      %p Verde N° 12595, La Florida (Metro Elisa Correa)
+                  %li
+                    %a.main-contact__link{ href: 'tel:(2)27237847' }
+                      %i.fa.fa-phone
+                      %p (2) 2723 7847
+              .main-contact__redes
+                %ul.main-contact__ul.main-contact__ul--inline
+                  %li
+                    %a.main-contact__social{ href: '#' }
+                      %i.fa.fa-facebook 
+                  %li
+                    %a.main-contact__social{ href: '#' }
+                      %i.fa.fa-linkedin
+          .main-contact-item
+            .main-contact__form
+              %form
+                .form-group
+                  %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+                .form-group
+                  %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+                .form-group
+                  %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+                .form-group
+                  %input#formGroupExampleInput2.form-control{:placeholder => "Mensaje", :type => "text"}/
+                .btn-box.float-right
+                  %button.btn_custom.btn--medium.btn--filled
+                    Enviar
+    %section.main-post
+      .container
+        .main-post__content
+          .main-post__item
+            .main-post__img
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2019/07/FLORENCE-01-1.jpg"}/
+            .main-post__box
+              .main-post__title
+                %p BANQUETERÍA Y REPOSTERÍA FLORENCE
+              .main-post__description
+                %p Banquetería y Repostería Florence es una de esas compañías que se convierten en el sustento de una familia durante generaciones.
+              .main-post__btn
+                %button.btn_custom.btn--medium.btn--filled
+                  Saber más
+          .main-post__item
+            .main-post__img
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2019/07/WhatsApp-Image-2019-06-26-at-13.39.59.jpeg"}/
+            .main-post__box
+              .main-post__title
+                %p REGALA FELICIDAD A TUS COLABORADORES
+              .main-post__description
+                %p ¿Tienes una empresa y buscas obsequios corporativos para entregarle a tus colaboradores, a tus clientes más fieles o para sorprender en un evento promocional? 
+              .main-post__btn
+                %button.btn_custom.btn--medium.btn--filled
+                  Saber más
+          .main-post__item
+            .main-post__img
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2019/06/Florence-montaje-1.jpg"}/
+            .main-post__box
+              .main-post__title
+                %p EL MEJOR BUFFET DE EMPRESAS EN BANQUETERÍA
+              .main-post__description
+                %p Como bien sabemos, en una compañía las comidas y banquetes son una parte más de los negocios.
+              .main-post__btn
+                %button.btn_custom.btn--medium.btn--filled
+                  Saber más
+    %section.main-product
+      .container
+        .main-product__content
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://images.unsplash.com/photo-1513876585916-61d40895c50e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+            .main-product__box
+              .main-product__title
+                %p COFFE BREAK VAJILLA DESECHABLE
+              .main-product__description
+                %p $3.800 + IVA por persona
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://images.unsplash.com/photo-1447347974530-d7c185559683?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=500&q=60"}/
+            .main-product__box
+              .main-product__title
+                %p COFFE BREAK VAJILLA DE LOZA
+              .main-product__description
+                %p $3.800 + IVA por persona
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://images.unsplash.com/photo-1514927298007-a2b56e5270e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+            .main-product__box
+              .main-product__title
+                %p COFFE BREAK TRADICIONAL
+              .main-product__description
+                %p $3.800 + IVA por persona
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://images.unsplash.com/photo-1513879237767-2449f20c0cb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+            .main-product__box
+              .main-product__title
+                %p COFFE BREAK ESPECIAL
+              .main-product__description
+                %p $3.800 + IVA por persona
+    %footer.main-footer
+      .container
+        .main-footer__copy
+          %p
+            %a{:href =>"http://cmarketing.cl/"}
+              Contact Marketing | 
+            Todos los derechos Reservados
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
