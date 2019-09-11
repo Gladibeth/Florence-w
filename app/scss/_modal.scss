@@ -1,0 +1,40 @@
+.modal-dialog {
+  max-width: 550px;
+}
+
+.modal-header {
+  border-bottom: 1px solid transparent;
+  padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-title {
+  font-size: 30px;
+  color: $florence;
+}
+
+.dropdown-menu {
+  padding: 20px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+
+.dropdown-menu {
+  min-width: 13rem;
+
+  li {
+    padding: 5px;
+
+    a {
+      color: $florence;
+      text-decoration: none;
+      font-family: $Roboto;
+    }
+  }
+}

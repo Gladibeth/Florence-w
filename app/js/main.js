@@ -26,12 +26,24 @@ $(window).scroll(function () {
   }
 });
 
+//menu drop
+$(document).ready(function () {
+  $('.navbar .dropdown').hover(function () {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+  }, function () {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+  });
+});
+
+
+// menu hambuger
+
 $(".hamburger").on("click", function () {
   $(this).toggleClass("is-active");
 });
 
 $("#hamburger").on("click", function () {
-  $('.sidebar').toggleClass('sidebar-active');
+  console.log('hola');
 });
 
 $(document).ready(function () {

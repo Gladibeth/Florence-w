@@ -25,24 +25,61 @@
             %ul.navbar-nav.mr-autos.ul-nav__relative
               %li.nav-item
                 %a.nav-link.active{:href => "#home"} Home
-              %li.nav-item
-                %a.nav-link{:href => "#about"} Eventos empresas
-              %li.nav-item
-                %a.nav-link{:href => "#service"} Eventos personas
-              %li.nav-item
-                %a.nav-link{:href => "#training"} Cocteleria
-              %li.nav-item
-                %a.nav-link{:href => "#client"} Pasteleria
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Eventos empresas
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Coffee Break
+                  %li
+                    %a{:href => "#"} Desayunos
+                  %li
+                    %a{:href => "#"} Buffet
+                  %li
+                    %a{:href => "#"} Lunch Box
+                  %li
+                    %a{:href => "#"} Cóctel
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Eventos personas
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Cóctel
+                  %li
+                    %a{:href => "#"} Buffet
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Cocteleria
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Galería cocteleria
+                  %li
+                    %a{:href => "#"} Lista de precios
+
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Pastelería
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Tortas Artesanales
+                  %li
+                    %a{:href => "#"} Tortas con Diseño
+                  %li
+                    %a{:href => "#"} Tortas de Novios
+                  %li
+                    %a{:href => "#"} Postres al vaso
+                  %li
+                    %a{:href => "#"} Desayunos a Domicilio
               %li.nav-item
                 %a.nav-link{:href => "#training"} Blog
               %li.nav-item
                 %a.nav-link{:href => "#client"} Menus
               %li.nav-item
                 %a.nav-link
-                  %button.btn-menu.border-0.hamburger.hamburger--elastic.ml-autos{:type => "button"}
+                  %button#hamburger.btn-menu.border-0.hamburger--elastic.ml-autos{:type => "button"}
                     %span.hamburger-box
                       %span.hamburger-inner
-              -# .sidebar
+              .sidebar
 
 
     .main-banner
@@ -55,7 +92,7 @@
               .main-banner__description
                 %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum iure at ea aliquid ullam vero sit eligendi, consequuntur vel ut quasi! Iste sunt doloribus, quibusdam eveniet commodi minus quis?
             .main-banner__img
-              %img{ :src => "https://images.unsplash.com/photo-1497728736977-37f59c912162?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-17.png"}/
         .main-banner__items
           .main-banner__item
             .main-banner__text
@@ -64,7 +101,7 @@
               .main-banner__description
                 %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum iure at ea aliquid ullam vero sit eligendi, consequuntur vel ut quasi! Iste sunt doloribus, quibusdam eveniet commodi minus quis?
             .main-banner__img
-              %img{ :src => "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-21.png"}/
     %section.main-about
       .container
         .main-about__content
@@ -85,6 +122,9 @@
                   %p Mision
                 .main-about__subdescrition
                   %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos nemo, suscipit et reiciendis animi exercitationem expedit.
+            .btn-box.float-left
+              %button.btn_custom.btn--medium.btn--filled{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
+                Contacto
         .main-about__team
           .main-about__item
             .main-about__titleteam
@@ -107,22 +147,22 @@
         .main-gallery__content 
           .main-gallery__item
             .main-gallery__img
-              %img{ :src => "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-35.png"}/
           .main-gallery__item
             .main-gallery__img
-              %img{ :src => "https://images.unsplash.com/photo-1450150205175-1e2ee46bb78b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-34.png"}/
           .main-gallery__item
             .main-gallery__img
-              %img{ :src => "https://images.unsplash.com/photo-1464195244916-405fa0a82545?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-21.png"}/
           .main-gallery__item
             .main-gallery__img
-              %img{ :src => "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-28.png"}/
           .main-gallery__item
             .main-gallery__img
-              %img{ :src => "https://images.unsplash.com/photo-1451475836122-926a326bda4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-16.png"}/
           .main-gallery__item
             .main-gallery__img
-              %img{ :src => "https://images.unsplash.com/photo-1500511599662-5441d83fae18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-7.png"}/
 
     %section.main-contact
       .container
@@ -182,7 +222,7 @@
                 %p Banquetería y Repostería Florence es una de esas compañías que se convierten en el sustento de una familia durante generaciones.
               .main-post__btn
                 %button.btn_custom.btn--medium.btn--filled
-                  Saber más
+                  Leer más
           .main-post__item
             .main-post__img
               %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2019/07/WhatsApp-Image-2019-06-26-at-13.39.59.jpeg"}/
@@ -193,7 +233,7 @@
                 %p ¿Tienes una empresa y buscas obsequios corporativos para entregarle a tus colaboradores, a tus clientes más fieles o para sorprender en un evento promocional? 
               .main-post__btn
                 %button.btn_custom.btn--medium.btn--filled
-                  Saber más
+                  Leer más
           .main-post__item
             .main-post__img
               %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2019/06/Florence-montaje-1.jpg"}/
@@ -204,13 +244,13 @@
                 %p Como bien sabemos, en una compañía las comidas y banquetes son una parte más de los negocios.
               .main-post__btn
                 %button.btn_custom.btn--medium.btn--filled
-                  Saber más
+                  Leer más
     %section.main-product
       .container
         .main-product__content
           .main-product__item
             .main-product__img
-              %img{ :src => "https://images.unsplash.com/photo-1513876585916-61d40895c50e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-express-vajilla-desechable-300x114.png"}/
             .main-product__box
               .main-product__title
                 %p COFFE BREAK VAJILLA DESECHABLE
@@ -218,7 +258,7 @@
                 %p $3.800 + IVA por persona
           .main-product__item
             .main-product__img
-              %img{ :src => "https://images.unsplash.com/photo-1447347974530-d7c185559683?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-express-vajilla-loza-300x114.png"}/
             .main-product__box
               .main-product__title
                 %p COFFE BREAK VAJILLA DE LOZA
@@ -226,7 +266,7 @@
                 %p $3.800 + IVA por persona
           .main-product__item
             .main-product__img
-              %img{ :src => "https://images.unsplash.com/photo-1514927298007-a2b56e5270e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-tradicional-300x114.png"}/
             .main-product__box
               .main-product__title
                 %p COFFE BREAK TRADICIONAL
@@ -234,7 +274,7 @@
                 %p $3.800 + IVA por persona
           .main-product__item
             .main-product__img
-              %img{ :src => "https://images.unsplash.com/photo-1513879237767-2449f20c0cb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-especial-300x114.png"}/
             .main-product__box
               .main-product__title
                 %p COFFE BREAK ESPECIAL
@@ -247,9 +287,41 @@
             %a{:href =>"http://cmarketing.cl/"}
               Contact Marketing | 
             Todos los derechos Reservados
+    / Modal
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-header
+            %h5#exampleModalLabel.modal-title Contáctanos
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+          .modal-body
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Mensaje", :type => "text"}/
+              .btn-box.float-right
+                %button.btn_custom.btn--medium.btn--filled
+                  Enviar
+            
+          -# .modal-footer
+          -#   %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+          -#   %button.btn.btn-primary{:type => "button"} Save changes
 
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/slick.min.js"}
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
+    :javascript
+      //menu drop
+      $('.nav .dropdown').hover(function () {
+        $(this).addClass('open');
+      }, function () {
+        $(this).removeClass('open');
+      });
