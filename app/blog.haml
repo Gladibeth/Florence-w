@@ -26,54 +26,58 @@
               %li.nav-item
                 %a.nav-link.active{:href => "index.html"} Home
               %li.dropdown.nav-item
-                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Eventos empresas
                 %ul.dropdown-menu
                   %li
-                    %a{:href => "#"} Coffee Break
+                    %a{:href => "category.html"} Coffee Break
+
                   %li
                     %a{:href => "#"} Desayunos
                   %li
                     %a{:href => "#"} Buffet
                   %li
                     %a{:href => "#"} Lunch Box
+                    
                   %li
                     %a{:href => "#"} Cóctel
+                    
               %li.dropdown.nav-item
                 %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Eventos personas
-                %ul.dropdown-menu
-                  %li
-                    %a{:href => "#"} Cóctel
-                  %li
-                    %a{:href => "#"} Buffet
+
               %li.dropdown.nav-item
                 %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Cocteleria
-                %ul.dropdown-menu
-                  %li
-                    %a{:href => "#"} Galería cocteleria
-                  %li
-                    %a{:href => "#"} Lista de precios
-
               %li.dropdown.nav-item
                 %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Pastelería
                 %ul.dropdown-menu
                   %li
                     %a{:href => "#"} Tortas Artesanales
+
                   %li
                     %a{:href => "#"} Tortas con Diseño
+
                   %li
                     %a{:href => "#"} Tortas de Novios
+    
                   %li
                     %a{:href => "#"} Postres al vaso
+                    
                   %li
                     %a{:href => "#"} Desayunos a Domicilio
+                    
               %li.nav-item
                 %a.nav-link{:href => "blog.html"} Blog
               %li.nav-item
                 %a.nav-link{:href => "menu.html"} Menus
+              -# %li.nav-item
+              -#   %a.nav-link
+              -#     %button#hamburger.btn-menu.border-0.hamburger--elastic.ml-autos{:type => "button"}
+              -#       %span.hamburger-box
+              -#         %span.hamburger-inner
+              -# .sidebar
     %section.main-parallax.main-how
       .overlay
       .main-general__info.main-general__info--white
