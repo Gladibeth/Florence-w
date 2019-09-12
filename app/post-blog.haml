@@ -1,0 +1,160 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Banqueteria Florence
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    / Favicons
+    %link{:href => "assets/img/favicon.ico", :rel => "shortcut icon"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img#iso{:src => "assets/img/banqueteria-florence-logo.png"}/
+            %button#hamburger.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos.ul-nav__relative
+              %li.nav-item
+                %a.nav-link.active{:href => "index.html"} Home
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Eventos empresas
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Coffee Break
+                  %li
+                    %a{:href => "#"} Desayunos
+                  %li
+                    %a{:href => "#"} Buffet
+                  %li
+                    %a{:href => "#"} Lunch Box
+                  %li
+                    %a{:href => "#"} Cóctel
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Eventos personas
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Cóctel
+                  %li
+                    %a{:href => "#"} Buffet
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Cocteleria
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Galería cocteleria
+                  %li
+                    %a{:href => "#"} Lista de precios
+
+              %li.dropdown.nav-item
+                %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Pastelería
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Tortas Artesanales
+                  %li
+                    %a{:href => "#"} Tortas con Diseño
+                  %li
+                    %a{:href => "#"} Tortas de Novios
+                  %li
+                    %a{:href => "#"} Postres al vaso
+                  %li
+                    %a{:href => "#"} Desayunos a Domicilio
+              %li.nav-item
+                %a.nav-link{:href => "blog.html"} Blog
+              %li.nav-item
+                %a.nav-link{:href => "menu.html"} Menus
+
+
+    .main-banner
+      .main-postblog__content
+        .main-banner__items
+          .main-banner__item
+            .main-banner__text
+              .main-banner__title.main-banner__title--post
+                %p BANQUETERÍA Y REPOSTERÍA FLORENCE
+
+            .main-banner__img
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-17.png"}/
+    %section.main-blogpost
+      .container
+        .main-blogpost__content
+          .main-blogpost__item
+            .main-blogpost__box
+              .main-blogpost__first
+                .main-blogpost__date
+                  %p 10/09/2019
+                %span.line /
+                .main-blogpost__category
+                  %span.badge.badge-custom Aniversario
+              .main-blogpost__description
+                %p Banquetería y Repostería Florence es una de esas compañías que se convierten en el sustento de una familia durante generaciones. Abierto desde hace casi 9 años, este establecimiento ha logrado crecer y aprender de sus errores, siempre buscando la mejora constante de sus procesos y servicios. 
+                %p “Desde el primer día, hemos logrado consolidarnos ganándonos una clientela fiel que nos ha permitido mantenernos pese al paso de los años. Con la idea de que el negocio tenga una vida duradera, hemos renovado un poco la cara del local dando continuidad al buen trabajo que hemos venido desarrollando desde el año 2010”, afirma Nenita Ramírez, una de sus dueñas y fundadora.
+                %p Nuestro negocio cuenta con un respaldo por parte de nuestros conocidos, colaboradores y clientes que nos han permitido persistir durante todo este tiempo, convirtiéndonos en el aliado que día a día muchos distinguidos eligen para comenzar su día de una manera dulce y con precios accesibles. 
+                %p Banquetería y Repostería Florence es un negocio que cuida de los rasgos y que ofrece una gran variedad de menús para todo tipo de clientela, entre ellos están los pasteles y tortas, coctelería, desayunos, pan fresco, dulces, entre otras.  Sus instalaciones, además del buen trato que entregan al cliente, han permitido a esta gran familia seguir adelante con el negocio.
+                %p “Todos nuestros productos son fabricados por nuestro equipo de trabajo, cuyo sello de calidad es la preocupación por los detalles y dedicación en lo que hacen. Nosotros nos esmeramos cada día por entregar lo mejor, en todos nuestros productos y servicios, teniendo como resultado clientes felices y satisfechos que vuelven y nos recomiendan, nos cuenta Ximena Núñez, socia fundadora.
+
+          .main-blogpost__item
+            .main-blogpost__box
+              .main-blogpost__title
+                %p Radio de accion directo
+              %ul.main-blogpost__ul
+                %li 
+                  %a{ :href=> ""}
+                  Chicureo
+                %li 
+                  %a{ :href=> ""}
+                  Las conde
+                %li 
+                  %a{ :href=> ""}
+                  Las reina
+                %li 
+                  %a{ :href=> ""}
+                  Macul
+                %li 
+                  %a{ :href=> ""}
+                  Santiago
+    %footer.main-footer
+      .container
+        .main-footer__copy
+          %p
+            %a{:href =>"http://cmarketing.cl/"}
+              Contact Marketing | 
+            Todos los derechos Reservados
+    / Modal
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-header
+            %h5#exampleModalLabel.modal-title Contáctanos
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+          .modal-body
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Mensaje", :type => "text"}/
+              .btn-box.float-right
+                %button.btn_custom.btn--medium.btn--filled
+                  Enviar
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
+

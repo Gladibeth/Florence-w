@@ -24,7 +24,7 @@
           .navbar-collapse.offcanvas-collapse
             %ul.navbar-nav.mr-autos.ul-nav__relative
               %li.nav-item
-                %a.nav-link.active{:href => "#home"} Home
+                %a.nav-link.active{:href => "index.html"} Home
               %li.dropdown.nav-item
                 %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
                   Eventos empresas
@@ -71,15 +71,15 @@
                   %li
                     %a{:href => "#"} Desayunos a Domicilio
               %li.nav-item
-                %a.nav-link{:href => "#training"} Blog
+                %a.nav-link{:href => "blog.html"} Blog
               %li.nav-item
-                %a.nav-link{:href => "#client"} Menus
-              %li.nav-item
-                %a.nav-link
-                  %button#hamburger.btn-menu.border-0.hamburger--elastic.ml-autos{:type => "button"}
-                    %span.hamburger-box
-                      %span.hamburger-inner
-              .sidebar
+                %a.nav-link{:href => "menu.html"} Menus
+              -# %li.nav-item
+              -#   %a.nav-link
+              -#     %button#hamburger.btn-menu.border-0.hamburger--elastic.ml-autos{:type => "button"}
+              -#       %span.hamburger-box
+              -#         %span.hamburger-inner
+              -# .sidebar
 
 
     .main-banner
@@ -102,12 +102,33 @@
                 %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum iure at ea aliquid ullam vero sit eligendi, consequuntur vel ut quasi! Iste sunt doloribus, quibusdam eveniet commodi minus quis?
             .main-banner__img
               %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-21.png"}/
+    %section.main-dishes
+      .container
+        .main-dishes__content
+          .main-dishes__item
+            .main-dishes__img
+              %img{ :src => "assets/img/icons/1.png"}/
+            .main-dishes__box
+              .main-dishes__title
+                %p Buffet
+          .main-dishes__item
+            .main-dishes__img
+              %img{ :src => "assets/img/icons/2.png"}/
+            .main-dishes__box
+              .main-dishes__title
+                %p Pasteles y tortas
+          .main-dishes__item
+            .main-dishes__img
+              %img{ :src => "assets/img/icons/3.png"}/
+            .main-dishes__box
+              .main-dishes__title
+                %p Desayunos a domicilio
     %section.main-about
       .container
         .main-about__content
           .main-about__line
             .main-about__img
-              %img{ :src => "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+              %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2019/07/FLORENCE-01-1.jpg"}/
           .main-about__box
             .main-general__title
               %p Quiénes somos
@@ -122,7 +143,7 @@
                   %p Mision
                 .main-about__subdescrition
                   %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos nemo, suscipit et reiciendis animi exercitationem expedit.
-            .btn-box.float-left
+            .btn-box
               %button.btn_custom.btn--medium.btn--filled{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
                 Contacto
         .main-about__team
@@ -140,6 +161,7 @@
               %img{ :src => "assets/img/people/3.jpg"}/
             .main-about__boxteam
               %img{ :src => "assets/img/people/2.jpg"}/
+    
     %section.main-gallery
       .container
         .main-general__title
@@ -163,54 +185,10 @@
           .main-gallery__item
             .main-gallery__img
               %img{ :src => "https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-7.png"}/
-
-    %section.main-contact
-      .container
-        .main-contact__content
-          .main-contact-item
-            .main-contact__info
-              .main-general__title
-                %p Contáctanos
-              .main-contact__description
-                %p Ésta es la vía correcta, para hacer llegar y deseas hacer un reclamo, Felicitacitarnos o realizar consultas generales.
-              .main-contact__data
-                %ul.main-contact__ul      
-                  %li
-                    %a.main-contact__link{ href: '#' }
-                      %i.fa.fa-envelope
-                      %p ventas@banqueteriaflorence.cl
-                  %li
-                    %a.main-contact__link{ href: '#' }
-                      %i.fa.fa-location-arrow
-                      %p Verde N° 12595, La Florida (Metro Elisa Correa)
-                  %li
-                    %a.main-contact__link{ href: 'tel:(2)27237847' }
-                      %i.fa.fa-phone
-                      %p (2) 2723 7847
-              .main-contact__redes
-                %ul.main-contact__ul.main-contact__ul--inline
-                  %li
-                    %a.main-contact__social{ href: '#' }
-                      %i.fa.fa-facebook 
-                  %li
-                    %a.main-contact__social{ href: '#' }
-                      %i.fa.fa-linkedin
-          .main-contact-item
-            .main-contact__form
-              %form
-                .form-group
-                  %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
-                .form-group
-                  %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
-                .form-group
-                  %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
-                .form-group
-                  %input#formGroupExampleInput2.form-control{:placeholder => "Mensaje", :type => "text"}/
-                .btn-box.float-right
-                  %button.btn_custom.btn--medium.btn--filled
-                    Enviar
     %section.main-post
       .container
+        .main-general__title
+          %p Blog
         .main-post__content
           .main-post__item
             .main-post__img
@@ -245,7 +223,53 @@
               .main-post__btn
                 %button.btn_custom.btn--medium.btn--filled
                   Leer más
-    %section.main-product
+    %section.main-contact
+      .container
+        .main-contact__content
+          .main-contact-item
+            .main-contact__info
+              .main-general__title
+                %p Contáctanos
+              .main-contact__description
+                %p Ésta es la vía correcta, para hacer llegar y deseas hacer un reclamo, Felicitacitarnos o realizar consultas generales.
+              .main-contact__data
+                %ul.main-contact__ul      
+                  %li
+                    %a.main-contact__link{ href: '#' }
+                      %i.fa.fa-envelope
+                      %p ventas@banqueteriaflorence.cl
+                  %li
+                    %a.main-contact__link{ href: '#' }
+                      %i.fa.fa-location-arrow
+                      %p Verde N° 12595, La Florida (Metro Elisa Correa)
+                  %li
+                    %a.main-contact__link{ href: 'tel:(2)27237847' }
+                      %i.fa.fa-phone
+                      %p (2) 2723 7847
+              .main-contact__redes
+                %ul.main-contact__ul.main-contact__ul--inline
+                  %li
+                    %a.main-contact__social{ :href=> 'https://www.facebook.com/BanqueteriaFlorence/', :target =>'_blank' }
+                      %i.fa.fa-facebook 
+                  %li
+                    %a.main-contact__social{ :href=> 'https://www.instagram.com/banqueteriaflorence/', :target =>'_blank' }
+                      %i.fa.fa-linkedin
+          .main-contact-item
+            .main-contact__form
+              %form
+                .form-group
+                  %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+                .form-group
+                  %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+                .form-group
+                  %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+                .form-group
+                  %input#formGroupExampleInput2.form-control{:placeholder => "Mensaje", :type => "text"}/
+                .btn-box.float-right
+                  %button.btn_custom.btn--medium.btn--filled
+                    Enviar
+    
+    -#%section.main-product
       .container
         .main-product__content
           .main-product__item
@@ -308,11 +332,6 @@
               .btn-box.float-right
                 %button.btn_custom.btn--medium.btn--filled
                   Enviar
-            
-          -# .modal-footer
-          -#   %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
-          -#   %button.btn.btn-primary{:type => "button"} Save changes
-
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/slick.min.js"}

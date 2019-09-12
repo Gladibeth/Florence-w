@@ -75,7 +75,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   WebFontConfig = {
     google: {
-      families: ['Roboto:400,500,700,900']
+      families: ['Roboto:400,500,700,900', 'Nunito:400,600,700']
     }
   };
   (function () {

@@ -47,7 +47,7 @@ $('.main-about__block').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -64,7 +64,8 @@ $('.main-about__block').slick({
         slidesToScroll: 1,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 1000,
+        arrows: false
       }
     }
   ]
