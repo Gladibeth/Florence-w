@@ -670,6 +670,19 @@ button:focus {
   font-family: "Roboto", sans-serif;
 }
 
+.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .nav-link {
     color: #000;
@@ -1568,6 +1581,10 @@ input.form-control__modal {
   border-top: none;
 }
 
+.main-product__item:hover {
+  cursor: pointer;
+}
+
 .main-product__item:hover .main-product__box {
   transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -1828,6 +1845,7 @@ input.form-control__modal {
   font-weight: 300;
   font-size: 14px;
   border-radius: 0px;
+  position: relative;
 }
 
 .nav-tabs .nav-link:hover {

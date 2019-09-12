@@ -93,6 +93,21 @@ button:focus {
   text-transform: uppercase;
   font-family: $Roboto;
 
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+
+
+
 
   @include respond-to(xs) {
     color: $black;
@@ -944,6 +959,8 @@ input {
 
 
   &:hover {
+    cursor: pointer;
+
     .main-product__box {
 
       transition: 0.3s ease-in-out;
@@ -1196,6 +1213,8 @@ input {
     font-weight: 300;
     font-size: 14px;
     border-radius: 0px;
+    position: relative;
+
 
     &:hover {
       border-color: transparent;
