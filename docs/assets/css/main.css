@@ -527,6 +527,7 @@ body {
 
 .dropdown-menu {
   min-width: 13rem;
+  border-radius: 1px;
 }
 
 .dropdown-menu li {
@@ -744,6 +745,12 @@ button:focus {
   top: 25%;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-banner__text .main-banner__title {
+    left: 8%;
+  }
+}
+
 .main-banner__text .main-banner__title.main-banner__title--post {
   top: 30%;
 }
@@ -817,6 +824,13 @@ button:focus {
   left: 22%;
   width: 350px;
   top: 45%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-banner__text .main-banner__description {
+    left: 8%;
+    width: 300px;
+  }
 }
 
 .main-banner__text .main-banner__description p {

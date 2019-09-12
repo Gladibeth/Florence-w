@@ -194,6 +194,10 @@ button:focus {
     width: 500px;
     top: 25%;
 
+    @include respond-to(md) {
+      left: 8%;
+    }
+
     &.main-banner__title--post {
       top: 30%;
 
@@ -258,6 +262,11 @@ button:focus {
     left: 22%;
     width: 350px;
     top: 45%;
+
+    @include respond-to(md) {
+      left: 8%;
+      width: 300px;
+    }
 
     p {
       padding: 0 25px;
