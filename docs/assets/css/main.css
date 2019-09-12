@@ -535,9 +535,20 @@ body {
 }
 
 .dropdown-menu li a {
-  color: #981b4b;
+  color: #000 !important;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+}
+
+.dropdown-menu li a:hover {
+  color: #981b4b !important;
+}
+
+.dropdown-menu-right {
+  right: -120%;
+  left: auto;
+  top: -23px;
+  border: 1px solid transparent;
 }
 
 section {

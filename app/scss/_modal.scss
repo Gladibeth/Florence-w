@@ -33,9 +33,20 @@
     padding: 5px;
 
     a {
-      color: $florence;
+      color: $black !important;
       text-decoration: none;
       font-family: $Roboto;
+
+      &:hover {
+        color: $florence !important;
+      }
     }
   }
+}
+
+.dropdown-menu-right {
+  right: -120%;
+  left: auto;
+  top: -23px;
+  border: 1px solid transparent;
 }
