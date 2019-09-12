@@ -58,6 +58,20 @@
   }
 }
 
+.btn--full {
+  background-color: $florence !important;
+  color: $white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    color: $florence;
+    background-color: transparent !important;
+    border: 1px solid $florence;
+
+  }
+}
+
 .btn-box {
   margin-top: 15px;
   text-align: left;
@@ -65,4 +79,8 @@
   @include respond-to(xs) {
     text-align: center;
   }
+}
+
+button {
+  border: 0px;
 }

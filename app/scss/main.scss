@@ -765,6 +765,11 @@ input {
       box-shadow: 0 0 0 0.2rem transparent;
     }
   }
+
+  &.form-control__modal {
+    padding: 20px 24px;
+    font-size: 16px;
+  }
 }
 
 .main-footer {
@@ -1169,6 +1174,18 @@ input {
 
 .main-category {
   padding: 80px 0 0 0;
+}
+
+.main-category__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-fullright {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
 }
 
 .nav-tabs {

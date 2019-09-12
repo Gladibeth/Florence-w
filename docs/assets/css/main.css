@@ -63,6 +63,19 @@
   transition: 0.3s ease-in-out;
 }
 
+.btn--full {
+  background-color: #981b4b !important;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.btn--full:hover {
+  color: #981b4b;
+  background-color: transparent !important;
+  border: 1px solid #981b4b;
+}
+
 .btn-box {
   margin-top: 15px;
   text-align: left;
@@ -72,6 +85,10 @@
   .btn-box {
     text-align: center;
   }
+}
+
+button {
+  border: 0px;
 }
 
 html,
@@ -515,6 +532,7 @@ body {
 .modal-title {
   font-size: 30px;
   color: #981b4b;
+  font-weight: 800;
 }
 
 .dropdown-menu {
@@ -1364,6 +1382,11 @@ input.form-control:focus {
   box-shadow: 0 0 0 0.2rem transparent;
 }
 
+input.form-control__modal {
+  padding: 20px 24px;
+  font-size: 16px;
+}
+
 .main-footer {
   background-color: #981b4b;
   margin-top: 100px;
@@ -1782,6 +1805,18 @@ input.form-control:focus {
 
 .main-category {
   padding: 80px 0 0 0;
+}
+
+.main-category__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-fullright {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
 }
 
 .nav-tabs {
