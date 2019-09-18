@@ -1,6 +1,6 @@
 $('.main-banner__content').slick({
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: false,

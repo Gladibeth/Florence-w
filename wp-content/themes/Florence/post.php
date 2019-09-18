@@ -16,7 +16,7 @@
               <p><?php the_title(); ?></p>
             </div>
             <div class="main-post__description">
-              <p><?php echo excerpt(30); ?></p>
+              <p><?php the_excerpt(); ?></p>
             </div>
             <a href="<?php the_permalink();?>" class="main-post__btn">
               <button class="btn_custom btn--medium btn--filled">

@@ -39,10 +39,29 @@
                   Eventos empresas
                 </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a href="category.html">Coffee Break</a>
+                <?php $args = array(
+
+                  'orderby' => 'slug',
+                  'order' => 'ASC'
+                );
+                $product_categories = get_terms('category', $args);
+                $count = count($product_categories);
+                
+
+
+                
+
+                foreach ($product_categories as $product_category) {
+                  
+
+                  ?>
+                  
+                  <li>
+                  <a href="<?php echo $url_category = get_term_link( $product_category ) ?>l"><?php echo $product_category->name; ?> </a>
                 </li>
-                <li>
+                <?php  } ?>
+                
+                <!-- <li>
                   <a href="#">Desayunos</a>
                 </li>
                 <li>
@@ -53,7 +72,7 @@
                 </li>
                 <li>
                   <a href="#">Cóctel</a>
-                </li>
+                </li> -->
               </ul>
             </li>
             <li class="dropdown nav-item">

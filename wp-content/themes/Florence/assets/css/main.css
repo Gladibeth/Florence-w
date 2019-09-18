@@ -1376,10 +1376,10 @@ html [type=button] {
   background-color: transparent;
 }
 
-input {
+.frm_full input {
   width: 100% !important;
   margin: 0 0 15px !important;
-  padding: 25px 24px !important;
+  padding: 15px 24px !important;
   font-family: "Nunito", sans-serif !important;
   font-size: 17px !important;
   line-height: 21px !important;
@@ -1393,12 +1393,12 @@ input {
   box-sizing: border-box !important;
 }
 
-input:focus {
+.frm_full input:focus {
   border-color: #981b4b !important;
   box-shadow: 0 0 0 0.2rem transparent !important;
 }
 
-textarea {
+.frm_full textarea {
   width: 100% !important;
   margin: 0 0 15px !important;
   padding: 15px 24px !important;
@@ -1416,7 +1416,7 @@ textarea {
   box-sizing: border-box !important;
 }
 
-textarea:focus {
+.frm_full textarea:focus {
   border-color: #981b4b !important;
   box-shadow: 0 0 0 0.2rem transparent !important;
 }
