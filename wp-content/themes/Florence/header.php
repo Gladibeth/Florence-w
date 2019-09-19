@@ -31,50 +31,53 @@
         </div>
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos ul-nav__relative">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+             <li class="nav-item">
+              <a class="nav-link active" href="<?php bloginfo('url'); ?>">Home</a>
             </li>
-            <li class="dropdown nav-item">
+                      <?php $wcatTerms = get_terms('menus_cat', array('hide_empty' => 1, 'parent' =>0)); 
+foreach($wcatTerms as $wcatTerm) : 
+  ?>
+
+
+       <li class="dropdown nav-item">
               <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                  Eventos empresas
+                 <?php echo $wcatTerm->name; ?>
                 </a>
               <ul class="dropdown-menu">
-                <?php $args = array(
 
-                  'orderby' => 'slug',
-                  'order' => 'ASC'
-                );
-                $product_categories = get_terms('category', $args);
-                $count = count($product_categories);
-                
+            <?php 
+            $wsubarg = array(
+              'hierarchical' => 1,
+              'show_option_none' => '',
+              'hide_empty' => 0,
+              'parent' => $wcatTerm->term_id,
+              'taxonomy' => 'menus_cat'
+              
+            );
+            $subcat = get_categories($wsubarg);
+            foreach($subcat as $sub) : ?>
+<li class="nav-item">
+              <a class="nav-link " href="<?php echo get_term_link( $sub->slug, $sub->taxonomy );?>"><?php echo $sub->name;?></a>
+            </li>
+              
 
-
-                
-
-                foreach ($product_categories as $product_category) {
-                  
-
-                  ?>
-                  
-                  <li>
-                  <a href="<?php echo $url_category = get_term_link( $product_category ) ?>l"><?php echo $product_category->name; ?> </a>
-                </li>
-                <?php  } ?>
-                
-                <!-- <li>
-                  <a href="#">Desayunos</a>
-                </li>
-                <li>
-                  <a href="#">Buffet</a>
-                </li>
-                <li>
-                  <a href="#">Lunch Box</a>
-                </li>
-                <li>
-                  <a href="#">Cóctel</a>
-                </li> -->
+  
+            <?php 
+          endforeach; 
+          ?>
               </ul>
             </li>
+
+
+            
+
+    
+
+<?php 
+endforeach; 
+?>
+           
+         <!-- 
             <li class="dropdown nav-item">
               <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
                   Eventos personas
@@ -122,7 +125,7 @@
                   <a href="#">Desayunos a Domicilio</a>
                 </li>
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="<?php bloginfo('url'); ?>/blog-all">Blog</a>
             </li>
