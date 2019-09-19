@@ -33,36 +33,13 @@
               <a aria-controls="category-5" aria-selected="false" class="nav-link" data-toggle="tab" href="#category-5" id="category-5-tab" role="tab">COFFEE BREAK DIRECTORIO</a>
             </li>
           </ul> -->
-          <?php $wcatTerms = get_terms('menus_cat', array('hide_empty' => 1, 'parent' =>0)); 
-foreach($wcatTerms as $wcatTerm) : 
-  ?>
+     
 
-
-      <?php
-      $wsubargs = array(
-        'hierarchical' => 1,
-        'show_option_none' => '',
-        'hide_empty' => 1,
-        'parent' => $wcatTerm->term_id,
-        'taxonomy' => 'menus_cat',
-        'posts_per_page' => 2
-      );
-      $wsubcats = get_categories($wsubargs);
-      foreach ($wsubcats as $wsc):
-        ?>
-      
-
-
-              <h3><?php echo $wsc->name; ?></h3>
-
+    
+ 
 <?php include('archive-menus.php'); ?>
- <?php
-    endforeach;
-    ?>
 
-<?php 
-endforeach; 
-?>
+  
           <div class="main-product main-product__padding">
             <div class="container">
               <div class="main-product__content">

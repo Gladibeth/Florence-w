@@ -1,6 +1,4 @@
-
-    
-    <?php while ( have_posts() ) :the_post(); ?>
+   <?php while ( have_posts() ) : the_post(); ?>
 
                 <div class="main-product__item">
                   <div class="main-product__img">
@@ -16,5 +14,4 @@
                   </div>
                 </div>
 
-<?php endwhile; ?>
-     
+ <?php endwhile; ?>
