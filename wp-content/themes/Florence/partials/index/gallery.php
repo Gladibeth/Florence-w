@@ -14,36 +14,7 @@
           </div>
         </div>
        <?php endwhile; ?>
-      <!-- <div class="main-gallery__item">
-        <div class="main-gallery__img">
-          <img
-            src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-34.png">
-        </div>
-      </div>
-      <div class="main-gallery__item">
-        <div class="main-gallery__img">
-          <img
-            src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-21.png">
-        </div>
-      </div>
-      <div class="main-gallery__item">
-        <div class="main-gallery__img">
-          <img
-            src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-28.png">
-        </div>
-      </div>
-      <div class="main-gallery__item">
-        <div class="main-gallery__img">
-          <img
-            src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-16.png">
-        </div>
-      </div>
-      <div class="main-gallery__item">
-        <div class="main-gallery__img">
-          <img
-            src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/01/servicios-de-banqueteria-florence.cl-7.png">
-        </div>
-      </div> -->
+      
     </div>
   </div>
 </section>

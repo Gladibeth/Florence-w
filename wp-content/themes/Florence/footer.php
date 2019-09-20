@@ -20,25 +20,9 @@
             </button>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput" placeholder="Nombre y apellido" type="text">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Correo" type="text">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" type="phone">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Mensaje" type="text">
-            </div>
-            <div class="btn-box float-right">
-              <button class="btn_custom btn--medium btn--filled">
-                  Enviar
-                </button>
-            </div>
-          </form>
+          <iframe id="fancybox-frame" name="fancybox-frame1569003494281" style="border:0;margin:0;overflow:hidden" src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-express-vajilla-desechable.pdf" allow="autoplay; encrypted-media" tabindex="999"></iframe>
+           <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false, 'description' => false ) ); ?>
+
         </div>
       </div>
     </div>

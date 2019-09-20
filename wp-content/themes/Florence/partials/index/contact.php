@@ -13,19 +13,19 @@
           <div class="main-contact__data">
             <ul class="main-contact__ul">
               <li>
-                <a class="main-contact__link" href="#">
+                <a class="main-contact__link" target="_blank" href="mailto:ventas@banqueteriaflorence.cl">
                   <i class="fa fa-envelope"></i>
                   <p>ventas@banqueteriaflorence.cl</p>
                 </a>
               </li>
               <li>
-                <a class="main-contact__link" href="#">
+                <a class="main-contact__link" target="_blank" href="https://www.google.co.ve/maps/place/Florence+-+Banqueteria+Y+Reposter%C3%ADa/@-33.5697453,-70.5917502,16.75z/data=!4m12!1m6!3m5!1s0x9662d733c652c59b:0xe72bf9b1c2245d88!2sFlorence+-+Banqueteria+Y+Reposter%C3%ADa!8m2!3d-33.5695914!4d-70.5898521!3m4!1s0x9662d733c652c59b:0xe72bf9b1c2245d88!8m2!3d-33.5695914!4d-70.5898521">
                   <i class="fa fa-location-arrow"></i>
                   <p>Verde N° 12595, La Florida (Metro Elisa Correa)</p>
                 </a>
               </li>
               <li>
-                <a class="main-contact__link" href="tel:(2)27237847">
+                <a class="main-contact__link" target="_blank" href="tel:+56227237847">
                   <i class="fa fa-phone"></i>
                   <p>(2) 2723 7847</p>
                 </a>
