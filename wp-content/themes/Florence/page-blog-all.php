@@ -14,7 +14,7 @@
       <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 6); ?>   
       <?php $loop = new WP_Query( $args ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        <a class="main-post__item" href="post-blog.html">
+        <div class="main-post__item">
           <div class="main-post__img">
             <img src="<?php echo get_the_post_thumbnail_url(); ?>">
           </div>
@@ -31,10 +31,11 @@
               </button>
             </a>
           </div>
-        </a>
+        </div>
       <?php endwhile; ?>
     
     </div>
   </div>
 </section>
+<?php get_template_part('partials/index/contact'); ?>
 <?php get_footer(); ?>

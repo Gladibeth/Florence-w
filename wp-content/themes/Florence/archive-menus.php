@@ -1,7 +1,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
   <div class="main-product__item">
-    <a href="" data-target="#menu-<?php the_id()?>" data-toggle="modal">
+    <a href="#menu-<?php the_id()?>" data-target="#menu-<?php the_id()?>" data-toggle="modal">
       <div class="main-product__img">
         <img src="<?php echo get_the_post_thumbnail_url(); ?>">
       </div>

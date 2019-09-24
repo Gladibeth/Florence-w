@@ -20,7 +20,6 @@
             </button>
         </div>
         <div class="modal-body">
-          <iframe id="fancybox-frame" name="fancybox-frame1569003494281" style="border:0;margin:0;overflow:hidden" src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-express-vajilla-desechable.pdf" allow="autoplay; encrypted-media" tabindex="999"></iframe>
            <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false, 'description' => false ) ); ?>
 
         </div>

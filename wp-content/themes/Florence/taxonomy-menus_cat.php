@@ -29,6 +29,16 @@
       </div>
     </div>
   </section>
+  <!-- <section class="main-gallery">
+    <div class="container">
+      <div class="main-general__title">
+        <p>Galería</p>
+      </div>
+      <div class="main-gallery__content">
+
+      </div>
+    </div>
+  </section> -->
   <section class="main-gallery">
     <div class="container">
       <div class="main-general__title">
@@ -49,23 +59,8 @@
       </div>
     </div>
   </section>
-  <!-- Modal -->
-  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="<?php the_field('pdf')?>" role="dialog" tabindex="-1">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contáctanos</h5>
-          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <span aria-hidden="true">×</span>
-            </button>
-        </div>
-        <div class="modal-body">
-          <iframe id="fancybox-frame" name="fancybox-frame1569003494281" style="height:500px;width:500px;border:0;margin:0;overflow:hidden" src="<?php the_field('pdf')?>" allow="autoplay; encrypted-media" tabindex="999"></iframe>
-           
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php get_template_part('partials/index/contact'); ?>
+
   <!-- Modal -->
 
   <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="quotation" role="dialog" tabindex="-1">
@@ -86,3 +81,4 @@
   </div>
   
   <?php get_footer();?>
+

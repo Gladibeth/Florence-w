@@ -194,61 +194,61 @@ function gallery() {
 }
 add_action( 'init', 'gallery', 0 );
 
-function post() {
+// function post() {
 
-	$labels = array(
-		'name'                  => _x( 'Blog', 'Post Type General Name', 'florence' ),
-		'singular_name'         => _x( 'Blog', 'Post Type Singular Name', 'florence' ),
-		'menu_name'             => __( 'Blog', 'florence' ),
-		'name_admin_bar'        => __( 'Post Type', 'florence' ),
-		'archives'              => __( 'Archivo', 'florence' ),
-		'attributes'            => __( 'Atributos', 'florence' ),
-		'parent_item_colon'     => __( 'Artículo principal', 'florence' ),
-		'all_items'             => __( 'Todos los artículos', 'florence' ),
-		'add_new_item'          => __( 'Agregar ítem nuevo', 'florence' ),
-		'add_new'               => __( 'Añadir nuevo', 'florence' ),
-		'new_item'              => __( 'Nuevo artículo', 'florence' ),
-		'edit_item'             => __( 'Editar elemento', 'florence' ),
-		'update_item'           => __( 'Actualizar artículo', 'florence' ),
-		'view_item'             => __( 'Ver ítem', 'florence' ),
-		'view_items'            => __( 'Ver artículos', 'florence' ),
-		'search_items'          => __( 'Buscar artículo', 'florence' ),
-		'not_found'             => __( 'Extraviado', 'florence' ),
-		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'florence' ),
-		'featured_image'        => __( 'Foto principal', 'florence' ),
-		'set_featured_image'    => __( 'Establecer imagen destacada', 'florence' ),
-		'remove_featured_image' => __( 'Remove featured image', 'florence' ),
-		'use_featured_image'    => __( 'Usar como imagen destacada', 'florence' ),
-		'insert_into_item'      => __( 'Insertar en el elemento', 'florence' ),
-		'uploaded_to_this_item' => __( 'Subido a este artículo', 'florence' ),
-		'items_list'            => __( 'Lista de artículos', 'florence' ),
-		'items_list_navigation' => __( 'Lista de elementos de navegación', 'florence' ),
-		'filter_items_list'     => __( 'Lista de elementos de filtro', 'florence' ),
-	);
-	$args = array(
-		'label'                 => __( 'Blog', 'florence' ),
-		'description'           => __( 'Post Type Description', 'florence' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array(  ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-format-image',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
-	);
-	register_post_type( 'Blog', $args );
+// 	$labels = array(
+// 		'name'                  => _x( 'Blog', 'Post Type General Name', 'florence' ),
+// 		'singular_name'         => _x( 'Blog', 'Post Type Singular Name', 'florence' ),
+// 		'menu_name'             => __( 'Blog', 'florence' ),
+// 		'name_admin_bar'        => __( 'Post Type', 'florence' ),
+// 		'archives'              => __( 'Archivo', 'florence' ),
+// 		'attributes'            => __( 'Atributos', 'florence' ),
+// 		'parent_item_colon'     => __( 'Artículo principal', 'florence' ),
+// 		'all_items'             => __( 'Todos los artículos', 'florence' ),
+// 		'add_new_item'          => __( 'Agregar ítem nuevo', 'florence' ),
+// 		'add_new'               => __( 'Añadir nuevo', 'florence' ),
+// 		'new_item'              => __( 'Nuevo artículo', 'florence' ),
+// 		'edit_item'             => __( 'Editar elemento', 'florence' ),
+// 		'update_item'           => __( 'Actualizar artículo', 'florence' ),
+// 		'view_item'             => __( 'Ver ítem', 'florence' ),
+// 		'view_items'            => __( 'Ver artículos', 'florence' ),
+// 		'search_items'          => __( 'Buscar artículo', 'florence' ),
+// 		'not_found'             => __( 'Extraviado', 'florence' ),
+// 		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'florence' ),
+// 		'featured_image'        => __( 'Foto principal', 'florence' ),
+// 		'set_featured_image'    => __( 'Establecer imagen destacada', 'florence' ),
+// 		'remove_featured_image' => __( 'Remove featured image', 'florence' ),
+// 		'use_featured_image'    => __( 'Usar como imagen destacada', 'florence' ),
+// 		'insert_into_item'      => __( 'Insertar en el elemento', 'florence' ),
+// 		'uploaded_to_this_item' => __( 'Subido a este artículo', 'florence' ),
+// 		'items_list'            => __( 'Lista de artículos', 'florence' ),
+// 		'items_list_navigation' => __( 'Lista de elementos de navegación', 'florence' ),
+// 		'filter_items_list'     => __( 'Lista de elementos de filtro', 'florence' ),
+// 	);
+// 	$args = array(
+// 		'label'                 => __( 'Blog', 'florence' ),
+// 		'description'           => __( 'Post Type Description', 'florence' ),
+// 		'labels'                => $labels,
+// 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+// 		'taxonomies'            => array(  ),
+// 		'hierarchical'          => false,
+// 		'public'                => true,
+// 		'show_ui'               => true,
+// 		'show_in_menu'          => true,
+// 		'menu_position'         => 5,
+// 		'menu_icon'             => 'dashicons-format-image',
+// 		'show_in_admin_bar'     => true,
+// 		'show_in_nav_menus'     => true,
+// 		'can_export'            => true,
+// 		'has_archive'           => true,
+// 		'exclude_from_search'   => false,
+// 		'publicly_queryable'    => true,
+// 		'capability_type'       => 'page',
+// 	);
+// 	register_post_type( 'Blog', $args );
 
-}
-add_action( 'init', 'post', 0 );
+// }
+// add_action( 'init', 'post', 0 );
 
 // Register Custom Post Type
 function menus() {

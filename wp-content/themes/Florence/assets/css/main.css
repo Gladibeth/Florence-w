@@ -1120,7 +1120,7 @@ button:focus {
 
 .main-about__boxteam {
   width: 250px;
-  height: 250px;
+  height: 250px !important;
   padding: 0 5px;
 }
 
@@ -1656,11 +1656,15 @@ input__modal {
   }
 }
 
+.main-product__title {
+  margin-top: 20px;
+}
+
 .main-product__title p {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #981b4b;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1816,6 +1820,10 @@ input__modal {
   background-color: #981b4b;
   color: #fff;
   font-size: 16px;
+}
+
+.badge-custom a {
+  color: #fff;
 }
 
 .main-blogpost__title p {

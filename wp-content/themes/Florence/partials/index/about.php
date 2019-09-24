@@ -16,8 +16,7 @@
               <p>Vision</p>
             </div>
             <div class="main-about__subdescrition">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos nemo, suscipit et reiciendis animi
-                exercitationem expedit.</p>
+              <p>Sobresalir localmente en el rubro de la repostería y banquetería entregando un servicio superior y destacando en el trato amable hacia el cliente, para que éste pueda vivir una experiencia de confort al momento de ser atendido por nuestro equipo de trabajo.</p>
             </div>
           </div>
           <div class="main-about__text">
@@ -25,8 +24,7 @@
               <p>Mision</p>
             </div>
             <div class="main-about__subdescrition">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos nemo, suscipit et reiciendis animi
-                exercitationem expedit.</p>
+              <p>Entregar productos de repostería y banquetería de la mejor calidad, con el fin de endulzar el día  y generar bienestar a todos los que tengan la oportunidad de disfrutar una pequeña parte de nuestra labor.</p>
             </div>
           </div>
         </div>
@@ -44,7 +42,7 @@
           <p>Equipo</p>
         </div>
         <div class="main-about__descriptionteam">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Conoce a nuestro excelente equipo de trabajo.</p>
         </div>
       </div>
       <div class="main-about__block">

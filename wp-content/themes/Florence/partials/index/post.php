@@ -4,8 +4,8 @@
       <p>Blog</p>
     </div>
     <div class="main-post__content">
-      <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 6); ?>   
-      <?php $loop = new WP_Query( $args ); ?>
+      <?php $args = array( 'cat=50', 'posts_per_page' => 3); ?>   
+      <?php $loop = new WP_Query( 'post_type=post&cat=-50' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="main-post__item">
           <div class="main-post__img">

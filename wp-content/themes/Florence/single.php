@@ -53,26 +53,32 @@
                 <p>Radio de accion directo</p>
               </div>
               <ul class="main-blogpost__ul">
-                <li>
-                  <a href=""></a> Chicureo
-                </li>
-                <li>
-                  <a href=""></a> Las conde
-                </li>
-                <li>
-                  <a href=""></a> Las reina
-                </li>
-                <li>
-                  <a href=""></a> Macul
-                </li>
-                <li>
-                  <a href=""></a> Santiago
-                </li>
+                <?php $args = array( 'cat=50'); ?>   
+                <?php $loop = new WP_Query( 'cat=50' ); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                  <li>
+                    <a href="<?php the_permalink()?>"></a> <?php the_title()?>
+                  </li>
+                <?php endwhile; ?>
+                  <!-- <li>
+                    <a href=""></a> Las conde
+                  </li>
+                  <li>
+                    <a href=""></a> Las reina
+                  </li>
+                  <li>
+                    <a href=""></a> Macul
+                  </li>
+                  <li>
+                    <a href=""></a> Santiago
+                  </li> -->
               </ul>
             </div>
           </div>
         </div>
       </div>
+
     </section>
   <?php endwhile; ?>
+  <?php get_template_part('partials/index/contact'); ?>
   <?php get_footer(); ?>

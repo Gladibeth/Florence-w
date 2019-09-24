@@ -51,25 +51,6 @@
       <div class="main-contact-item">
         <div class="main-contact__form">
             <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false, 'description' => false ) ); ?>
-        <!-- <form action="">
-          <div class="form-group">
-            <input class="form-control" id="formGroupExampleInput" placeholder="Nombre y apellido" type="text">
-          </div>
-          <div class="form-group">
-            <input class="form-control" id="formGroupExampleInput2" placeholder="Correo" type="text">
-          </div>
-          <div class="form-group">
-            <input class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" type="phone">
-          </div>
-          <div class="form-group">
-            <input class="form-control" id="formGroupExampleInput2" placeholder="Mensaje" type="text">
-          </div>
-          <div class="btn-box float-right">
-            <button class="btn_custom btn--medium btn--filled">
-              Enviar
-            </button>
-          </div>
-        </form> -->
         </div>
       </div>
     </div>
