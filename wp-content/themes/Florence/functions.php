@@ -307,27 +307,44 @@ function menus() {
 }
 add_action( 'init', 'menus', 0 );
 
-// register a taxonomy called 'menus banqueteria'
-function wptp_register_taxonomy() {
-    register_taxonomy( 'menus_cat', 'menus',
-        array(
-            'labels' => array(
-                'name'              => 'menus banqueteria',
-                'singular_name'     => 'menus banqueteria',
-                'search_items'      => 'Search menus banqueteria',
-                'all_items'         => 'All menus banqueteria',
-                'edit_item'         => 'Edit menus banqueteria',
-                'update_item'       => 'Update menus banqueteria',
-                'add_new_item'      => 'Add New menus banqueteria',
-                'new_item_name'     => 'New menus banqueteria Name',
-                'menu_name'         => 'menus banqueteria',
-            ),
-            'hierarchical' => true,
-            'sort' => true,
-            'args' => array( 'orderby' => 'term_order' ),
-            'rewrite' => array( 'slug' => 'menus-banqueteria' ),
-            'show_admin_column' => true
-        )
-    );
+
+
+
+
+function menus_cat_taxonomy() {
+
+	$labels = array(
+		'name'                       => _x( 'menus-banqueteria', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'menus-banqueteria', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'menus-banqueteria', 'text_domain' ),
+		'all_items'                  => __( 'Todas los menus-banqueteria', 'text_domain' ),
+		'parent_item'                => __( 'Parent menus-banqueteria', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent menus-banqueteria:', 'text_domain' ),
+		'new_item_name'              => __( 'Nuevo menus-banqueteria', 'text_domain' ),
+		'add_new_item'               => __( 'Agregar Nuevo menus-banqueteria', 'text_domain' ),
+		'edit_item'                  => __( 'Editar menus-banqueteria', 'text_domain' ),
+		'update_item'                => __( 'Actualizar menus-banqueteria', 'text_domain' ),
+		'view_item'                  => __( 'Ver Item', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used items', 'text_domain' ),
+		'popular_items'              => __( 'Popular Items', 'text_domain' ),
+		'search_items'               => __( 'Buscar menus-banqueteria', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+		'no_terms'                   => __( 'No items', 'text_domain' ),
+		'items_list'                 => __( 'Items list', 'text_domain' ),
+		'items_list_navigation'      => __( 'Items list navigation', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'rewrite' => array( 'slug' => 'menus-banqueteria' ),
+	);
+	register_taxonomy( 'menus_cat', array( 'menus','galera' ), $args );
 }
-add_action( 'init', 'wptp_register_taxonomy' );
+add_action( 'init', 'menus_cat_taxonomy', 0 );

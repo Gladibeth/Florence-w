@@ -1,21 +1,35 @@
-<?php while ( have_posts() ) : the_post(); ?>
-
-  <div class="main-product__item">
-    <a href="#menu-<?php the_id()?>" data-target="#menu-<?php the_id()?>" data-toggle="modal">
-      <div class="main-product__img">
-        <img src="<?php echo get_the_post_thumbnail_url(); ?>">
-      </div>
-    </a>
-    <div class="main-product__box">
-      <div class="main-product__title">
-        <p><?php the_title(); ?></p>
-      </div>
-      <div class="main-product__description">
-        <p><?php the_content(); ?></p>
+<?php if(get_field('galeria') == 0 ): while ( have_posts() ) : the_post(); ?>
+    <div class="main-product__item">
+      
+      <a href="#menu-<?php the_id();?>" data-target="#menu-<?php the_id();?>" data-toggle="modal">
+        <div class="main-product__img">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+        </div>
+</a>
+      <div class="main-product__box">
+        <div class="main-product__title">
+          <p><?php the_title(); ?></p>
+        </div>
+        <div class="main-product__description">
+          <p><?php the_content(); ?></p>
+        </div>
       </div>
     </div>
-  </div>
-<?php endwhile; ?>
+    <?php endwhile; ?>
+  <?php else:?>
+  
+  <?php while ( have_posts() ) : the_post(); ?>
+    <div class="main-product__item">
+      
+      <a href="#menu-<?php the_id();?>" data-target="#menu-<?php the_id();?>" data-toggle="modal">
+        <div class="main-product__img">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+        </div>
+      </a>
+    </div>
+    <?php endwhile; ?>
+<?php endif; ?>
+
  
 <?php while ( have_posts() ) : the_post(); ?>
   <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="menu-<?php the_id()?>" role="dialog" tabindex="-1">

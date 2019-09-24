@@ -1,4 +1,9 @@
-<?php get_header();?>
+<?php get_header();
+
+
+$category = get_category( get_query_var( 'menus_cat' ) );
+$cat_id = $category->cat_ID;
+?>
   <section class="main-parallax main-how">
     <div class="overlay"></div>
     <div class="main-general__info main-general__info--white main-general__info--left">
@@ -29,23 +34,13 @@
       </div>
     </div>
   </section>
-  <!-- <section class="main-gallery">
-    <div class="container">
-      <div class="main-general__title">
-        <p>Galería</p>
-      </div>
-      <div class="main-gallery__content">
-
-      </div>
-    </div>
-  </section> -->
   <section class="main-gallery">
     <div class="container">
       <div class="main-general__title">
-        <p>Galería</p>
+        <p>Galería <?php echo $cat_id; ?></p>
       </div>
       <div class="main-gallery__content">
-        <?php $args = array( 'post_type' => 'Galería', 'posts_per_page' => 6); ?>   
+        <?php $args = array( 'post_type' => 'Galería', 'cat'=>'$cat_id', 'posts_per_page' => 6); ?>   
         <?php $loop = new WP_Query( $args ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-gallery__item">

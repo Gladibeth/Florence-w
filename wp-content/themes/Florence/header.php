@@ -34,13 +34,13 @@
              <li class="nav-item">
               <a class="nav-link active" href="<?php bloginfo('url'); ?>">Home</a>
             </li>
-                      <?php $wcatTerms = get_terms('menus_cat', array('hide_empty' => 1, 'parent' =>0)); 
+                      <?php $wcatTerms = get_terms('menus_cat', array('hide_empty' => 0, 'parent' =>0)); 
 foreach($wcatTerms as $wcatTerm) : 
   ?>
 
 
        <li class="dropdown nav-item">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" role="button">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy );?>" role="button">
                  <?php echo $wcatTerm->name; ?>
                 </a>
               <ul class="dropdown-menu">
