@@ -14,10 +14,31 @@
   <link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png" rel="shortcut icon">
   <?php wp_head(); ?>
 </head>
+                	<?php
+   $current_file =  $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; //determina cual es la moneda que tiene la pag
 
+?>
 <body>
   <header id="home">
     <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
+      <div class="nav-top__header">
+        <div class="nav-top__content d-flex pl-4 pr-4 justify-content-between">
+          <div class="main-nav__contact">
+            
+            
+          </div>
+          <div class="main-nav__redes d-flex">
+            <a class="main-contact__link mr-4" target="_blank" href="mailto:ventas@banqueteriaflorence.cl">
+                  <i style="color: #981b4b;" class="fa fa-envelope"></i>
+                  <p style="color: #981b4b;">ventas@banqueteriaflorence.cl</p>
+                </a>
+            <a class="main-contact__link" target="_blank" href="tel:+56227237847">
+                  <i style="color: #981b4b;" class="fa fa-phone"></i>
+                  <p style="color: #981b4b;">(2) 2723 7847</p>
+                </a>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="main-brand">
           <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
@@ -34,101 +55,72 @@
              <li class="nav-item">
               <a class="nav-link active" href="<?php bloginfo('url'); ?>">Home</a>
             </li>
-                      <?php $wcatTerms = get_terms('menus_cat', array('hide_empty' => 0, 'parent' =>0)); 
-foreach($wcatTerms as $wcatTerm) : 
-  ?>
-
-
-       <li class="dropdown nav-item">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy );?>" role="button">
-                 <?php echo $wcatTerm->name; ?>
+           
+            <li class="dropdown nav-item">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                  Eventos empresas
                 </a>
               <ul class="dropdown-menu">
-
-            <?php 
-            $wsubarg = array(
-              'hierarchical' => 1,
-              'show_option_none' => '',
-              'hide_empty' => 0,
-              'parent' => $wcatTerm->term_id,
-              'taxonomy' => 'menus_cat'
-              
-            );
-            $subcat = get_categories($wsubarg);
-            foreach($subcat as $sub) : ?>
-<li class="nav-item">
-              <a class="nav-link " href="<?php echo get_term_link( $sub->slug, $sub->taxonomy );?>"><?php echo $sub->name;?></a>
-            </li>
-              
-
-  
-            <?php 
-          endforeach; 
-          ?>
+                <li>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/coffee-brak/">Coffee Break</a>
+                </li>
+                <li>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/desayunos/">Desayunos</a>
+                </li>
+                <li>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/buffet/">Buffet</a>
+                </li>
+                <li>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/lunch-box/">Lunch Box</a>
+                </li>
+                <li>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/coctel/">Cóctel</a>
+                </li>
               </ul>
             </li>
-
-
-            
-
-    
-
-<?php 
-endforeach; 
-?>
-           
-         <!-- 
             <li class="dropdown nav-item">
               <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
                   Eventos personas
                 </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#">Buffet</a>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/buffet-evento-persona/">Buffet</a>
                 </li>
                 <li>
-                  <a href="#">Cóctel</a>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/coctel-evento-persona/">Cóctel</a>
                 </li>
               </ul>
             </li>
-            <li class="dropdown nav-item">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+            <li class="nav-item">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" href="https://www.banqueteriaflorence.cl/menus-banqueteria/cocteleria/" role="button">
                   Cocteleria
                 </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="category.html">Galería Cocteleria</a>
-                </li>
-                <li>
-                  <a href="#">Listado de precios</a>
-                </li>
-              </ul>
+
             </li>
             <li class="dropdown nav-item">
               <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
                   Pastelería
                 </a>
               <ul class="dropdown-menu">
+
                 <li>
-                  <a href="#">Tortas Artesanales</a>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/tortas-artesanales/">Tortas Artesanales</a>
                 </li>
                 <li>
-                  <a href="#">Tortas con Diseño</a>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/tortas-con-disenos/">Tortas con Diseño</a>
                 </li>
                 <li>
-                  <a href="#">Tortas de Novios</a>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/tortas-de-novios/">Tortas de Novios</a>
                 </li>
                 <li>
-                  <a href="#">Postres al vaso</a>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/postres-al-vaso/">Postres al vaso</a>
                 </li>
                 <li>
-                  <a href="#">Desayunos a Domicilio</a>
+                  <a href="https://www.banqueteriaflorence.cl/menus-banqueteria/desayunos-a-domicilio/">Desayunos a Domicilio</a>
                 </li>
               </ul>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="<?php bloginfo('url'); ?>/blog-all">Blog</a>
             </li>
+        
             <li class="nav-item">
               <a class="nav-link" href="<?php bloginfo('url'); ?>/menu">Menus</a>
             </li>
@@ -137,3 +129,5 @@ endforeach;
       </div>
     </nav>
   </header>
+
+  

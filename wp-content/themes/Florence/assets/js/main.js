@@ -15,12 +15,14 @@ $(window).scroll(function () {
     $('.navbar-fixed-js').addClass('fixed');
     $('.nav-link').addClass('fixed-color');
     $('.nav-top__header').addClass('nav-top__header--detele');
+    $('.navbar .container').addClass('fixed');
     // $("#iso").addClass('img-size').attr('src', 'assets/img/logo-white.jpg').removeClass('scroll-up');
 
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
     $('.nav-link').removeClass('fixed-color');
     $('.nav-top__header').removeClass('nav-top__header--detele');
+    $('.navbar .container').removeClass('fixed');
     // $("#iso").removeClass('img-size').attr('src', 'assets/img/logo-fvr.jpg').removeClass('scroll-up');
 
   }

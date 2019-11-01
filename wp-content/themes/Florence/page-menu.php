@@ -1,5 +1,5 @@
 <?php get_header();?>
-  <section class="main-parallax main-how">
+  <section class="main-parallax main-how" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/NUESTROS MENU.png');height: 75vh;background-position: 58% -60px;" >
     <div class="overlay"></div>
     <div class="main-general__info main-general__info--white main-general__info--left">
       <div class="main-parallax__title">
@@ -9,10 +9,15 @@
   </section>
   <section class="main-product main-product__padding">
     <div class="container">
+      <div class="btn-fullright">
+          <button class="btn_custom btn--medium btn--full" data-target="#quotation" data-toggle="modal" type="button">
+              Contacto
+            </button>
+        </div>
       <div class="main-product__content">
-        <?php $args = array( 'post_type' => 'menus'); ?>   
+        <?php $args = array( 'post_type' => 'menus', 'posts_per_page' => -1); ?>   
         <?php $loop = new WP_Query( $args ); ?>
-        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); if(get_field('galeria') != 1): ?>
           <div class="main-product__item">
             <a href="#menu-<?php the_id()?>" data-target="#menu-<?php the_id()?>" data-toggle="modal">
               <div class="main-product__img">
@@ -28,7 +33,7 @@
               </div>
             </div>
           </div>
-        <?php endwhile; ?>
+<?php endif; endwhile; ?>
 
         <?php $args = array( 'post_type' => 'menus'); ?>   
         <?php $loop = new WP_Query( $args ); ?>
@@ -49,99 +54,29 @@
             </div>
           </div>
           <?php endwhile; ?>
-        <!-- <div class="main-product__item">
-          <div class="main-product__img">
-            <img src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-express-vajilla-desechable-300x114.png">
-          </div>
-          <div class="main-product__box">
-            <div class="main-product__title">
-              <p>COFFE BREAK VAJILLA DESECHABLE</p>
-            </div>
-            <div class="main-product__description">
-              <p>$3.800 + IVA por persona</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="main-product__item">
-          <div class="main-product__img">
-            <img src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-express-vajilla-loza-300x114.png">
-          </div>
-          <div class="main-product__box">
-            <div class="main-product__title">
-              <p>COFFE BREAK VAJILLA DE LOZA</p>
-            </div>
-            <div class="main-product__description">
-              <p>$3.800 + IVA por persona</p>
-            </div>
-          </div>
-        </div>
-        <div class="main-product__item">
-          <div class="main-product__img">
-            <img src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coffe-break-tradicional-300x114.png">
-          </div>
-          <div class="main-product__box">
-            <div class="main-product__title">
-              <p>COFFE BREAK TRADICIONAL</p>
-            </div>
-            <div class="main-product__description">
-              <p>$3.800 + IVA por persona</p>
-            </div>
-          </div>
-        </div>
-        <div class="main-product__item">
-          <div class="main-product__img">
-            <img src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/coctel-deluxe-300x114.png">
-          </div>
-          <div class="main-product__box">
-            <div class="main-product__title">
-              <p>Buffet Light</p>
-            </div>
-            <div class="main-product__description">
-              <p>$3.800 + IVA por persona</p>
-            </div>
-          </div>
-        </div>
-        <div class="main-product__item">
-          <div class="main-product__img">
-            <img src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/buffet-tradicional-300x114.png">
-          </div>
-          <div class="main-product__box">
-            <div class="main-product__title">
-              <p>Buffet Tradicional</p>
-            </div>
-            <div class="main-product__description">
-              <p>$3.800 + IVA por persona</p>
-            </div>
-          </div>
-        </div>
-        <div class="main-product__item">
-          <div class="main-product__img">
-            <img src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/02/buffet-deluxe-300x114.png">
-          </div>
-          <div class="main-product__box">
-            <div class="main-product__title">
-              <p>buffet deluxe</p>
-            </div>
-            <div class="main-product__description">
-              <p>$3.800 + IVA por persona</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="main-product__item">
-          <div class="main-product__img">
-            <img src="https://www.banqueteriaflorence.cl/wp-content/uploads/2018/04/tortas-tradicionales-banqueterialorence.cl_-300x114.png">
-          </div>
-          <div class="main-product__box">
-            <div class="main-product__title">
-              <p>TORTAS TRADICIONALES</p>
-            </div>
-            <div class="main-product__description">
-              <p>$3.800 + IVA por persona</p>
-            </div>
-          </div>
-        </div> -->
+    
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="quotation" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cotiza con nosotros</h5>
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <?php get_template_part('partials/index/contact'); ?>
   <?php get_footer();?>

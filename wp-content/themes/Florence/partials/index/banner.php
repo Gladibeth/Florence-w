@@ -14,6 +14,7 @@
             </div>
           </div>
           <div class="main-banner__img">
+            <div class="mask"></div>
             <img
               src="<?php echo get_the_post_thumbnail_url(); ?>">
             <!-- <img

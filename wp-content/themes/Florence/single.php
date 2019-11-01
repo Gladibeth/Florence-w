@@ -4,7 +4,7 @@
       <div class="main-postblog__content">
         <div class="main-banner__items">
 
-          <div class="main-banner__item">
+          <div class="main-banner__item main-banner__item--post">
             <div class="main-banner__text">
               <div class="main-banner__title main-banner__title--post">
                 <p><?php the_title(); ?></p>
@@ -18,11 +18,19 @@
         </div>
       </div>
     </div>
+    <!-- <section class="main-parallax main-how" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);height: 75vh;background-position: 58% -60px;">
+      <div class="overlay"></div>
+      <div class="main-general__info main-general__info--white main-general__info--left">
+        <div class="main-parallax__title">
+         
+        </div>
+      </div>
+    </section> -->
     <section class="main-blogpost">
       <div class="container">
         <div class="main-blogpost__content">
           <div class="main-blogpost__item">
-        
+            
             <div class="main-blogpost__box">
               <div class="main-blogpost__first">
                 <div class="main-blogpost__date">
@@ -35,14 +43,6 @@
               </div>
               <div class="main-blogpost__description">
                 <p><?php the_content();  ?></p>
-                <!-- <p>“Desde el primer día, hemos logrado consolidarnos ganándonos una clientela fiel que nos ha permitido mantenernos pese al paso de los años. Con la idea de que el negocio tenga una vida duradera, hemos renovado un poco la cara del local dando
-                  continuidad al buen trabajo que hemos venido desarrollando desde el año 2010”, afirma Nenita Ramírez, una de sus dueñas y fundadora.</p>
-                <p>Nuestro negocio cuenta con un respaldo por parte de nuestros conocidos, colaboradores y clientes que nos han permitido persistir durante todo este tiempo, convirtiéndonos en el aliado que día a día muchos distinguidos eligen para comenzar
-                  su día de una manera dulce y con precios accesibles.</p>
-                <p>Banquetería y Repostería Florence es un negocio que cuida de los rasgos y que ofrece una gran variedad de menús para todo tipo de clientela, entre ellos están los pasteles y tortas, coctelería, desayunos, pan fresco, dulces, entre otras.
-                  Sus instalaciones, además del buen trato que entregan al cliente, han permitido a esta gran familia seguir adelante con el negocio.</p>
-                <p>“Todos nuestros productos son fabricados por nuestro equipo de trabajo, cuyo sello de calidad es la preocupación por los detalles y dedicación en lo que hacen. Nosotros nos esmeramos cada día por entregar lo mejor, en todos nuestros productos
-                  y servicios, teniendo como resultado clientes felices y satisfechos que vuelven y nos recomiendan, nos cuenta Ximena Núñez, socia fundadora.</p> -->
               </div>
             </div>
         

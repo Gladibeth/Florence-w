@@ -41,7 +41,7 @@
               </li>
               <li>
                 <a class="main-contact__social" href="https://www.instagram.com/banqueteriaflorence/" target="_blank">
-                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-instagram" id="insta"></i>
                 </a>
               </li>
             </ul>
